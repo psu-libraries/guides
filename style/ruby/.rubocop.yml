@@ -1,5 +1,8 @@
 # Rubocop version 0.39.0
 # Base-style configuration. This should be included in all projects.
+# Descriptions in this file are based off of the overwview of the Cop as found here:
+# http://www.rubydoc.info/github/bbatsov/rubocop/master/Rubocop/Cop
+
 require: rubocop-rspec
 
 AllCops:
@@ -467,6 +470,10 @@ Style/InitialIndentation:
   Description: >-
     Checks the indentation of the first non-blank non-comment line in a file.
   Enabled: false
+  
+Style/SymbolArray:
+  Description: This cop checks for array literals made up of symbols that are not using the %i() syntax.
+  Enabled: false  
 
 # Lint
 
