@@ -53,3 +53,23 @@
   [delivering email on behalf of the app's users].
 
 [delivering email on behalf of the app's users]: http://robots.thoughtbot.com/post/3215611590/recipe-delivering-email-on-behalf-of-users
+
+## Controllers
+
+* Use _thin_ controllers, meaning that they do a limited number of things:
+  * defines an action for a given route
+  * performs the action
+  * renders the view
+* Prefer forms and presenters to model-based objects
+* Use service objects or POROs to delegate actions that are complicated or contain thorny logic
+* Don't assign more than one form or presenter to a single action
+
+## Views
+
+* Avoid more than one-level of logic, i.e. a single if-else or a single while loop
+* Use forms and presenters to encapsulate difficult logic and domain-level concepts
+* Use local variables when rendering partials
+* Avoid using one-off variables within a view, delegate those to a form or presenter instead
+* Prefer html over Ruby
+
+
