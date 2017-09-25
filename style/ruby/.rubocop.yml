@@ -16,7 +16,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
 
-Style/AccessorMethodName:
+Naming/AccessorMethodName:
   Description: Check the naming of accessor methods for get_/set_.
   Enabled: true
 
@@ -35,7 +35,7 @@ Style/AsciiComments:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#english-comments'
   Enabled: false
 
-Style/AsciiIdentifiers:
+Naming/AsciiIdentifiers:
   Description: 'Use only ascii symbols in identifiers.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#english-identifiers'
   Enabled: false
@@ -51,7 +51,7 @@ Style/BlockDelimiters:
   Exclude:
     - 'spec/**/*'
 
-Style/BlockEndNewline:
+Layout/BlockEndNewline:
   Description: 'Checks whether the end statement of a do..end block is on its own line.'
   Enabled: true
   Exclude:
@@ -167,7 +167,7 @@ Style/EvenOdd:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#predicate-methods'
   Enabled: false
 
-Style/FileName:
+Naming/FileName:
   Description: 'Use snake_case for source file names.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#snake-case-files'
   Enabled: false
@@ -210,7 +210,7 @@ Style/IfWithSemicolon:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-semicolon-ifs'
   Enabled: false
 
-Style/IndentationConsistency:
+Layout/IndentationConsistency:
   Description: 'Checks for inconsistent indentation.'
   EnforcedStyle: rails
 
@@ -254,7 +254,7 @@ Style/MultilineBlockChain:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#single-line-blocks'
   Enabled: false
 
-Style/MultilineBlockLayout:
+Layout/MultilineBlockLayout:
   Description: 'Checks whether the multiline do end blocks have a newline after the start of the block.'
   Enabled: true
   Exclude:
@@ -301,7 +301,7 @@ Style/OneLineConditional:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#ternary-operator'
   Enabled: false
 
-Style/OpMethod:
+Naming/BinaryOperatorParameter:
   Description: 'When defining binary operators, name the argument other.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#other-arg'
   Enabled: false
@@ -321,7 +321,7 @@ Style/PerlBackrefs:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-perl-regexp-last-matchers'
   Enabled: false
 
-Style/PredicateName:
+Naming/PredicateName:
   Description: 'Check the names of predicate methods.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#bool-methods-qmark'
   NamePrefixBlacklist:
@@ -408,7 +408,7 @@ Lint/UselessAssignment:
                 The basic idea for this cop was from the warning of `ruby -cw`:'
   Enabled: true
 
-Style/VariableName:
+Naming/VariableName:
   Description: 'Makes sure that all variables use the configured style, snake_case or camelCase, for their names.'
   Enabled: true
 
@@ -438,35 +438,35 @@ Style/WordArray:
 
 # Layout
 
-Style/AlignParameters:
+Layout/AlignParameters:
   Description: 'Here we check if the parameters on a multi-line method call or definition are aligned.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-double-indent'
   Enabled: false
 
-Style/DotPosition:
+Layout/DotPosition:
   Description: 'Checks the position of the dot in multi-line method calls.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#consistent-multi-line-chains'
   EnforcedStyle: leading
 
-Style/ExtraSpacing:
+Layout/ExtraSpacing:
   Description: 'Do not use unnecessary spacing.'
   Enabled: true
 
-Style/MultilineOperationIndentation:
+Layout/MultilineOperationIndentation:
   Description: >-
                  Checks indentation of binary operations that span more than
                  one line.
   Enabled: true
   EnforcedStyle: indented
 
-Style/MultilineMethodCallIndentation:
+Layout/MultilineMethodCallIndentation:
   Description: >-
                  Checks indentation of method calls with the dot operator
                  that span more than one line.
   Enabled: true
   EnforcedStyle: indented
 
-Style/InitialIndentation:
+Layout/InitialIndentation:
   Description: >-
     Checks the indentation of the first non-blank non-comment line in a file.
   Enabled: false
@@ -474,6 +474,10 @@ Style/InitialIndentation:
 Style/SymbolArray:
   Description: This cop checks for array literals made up of symbols that are not using the %i() syntax.
   Enabled: false  
+
+Style/SymbolArray:
+  Description: This cop checks for array literals made up of symbols that are not using the %i() syntax.
+  Enabled: false
 
 # Lint
 
