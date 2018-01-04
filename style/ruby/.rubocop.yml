@@ -1,4 +1,4 @@
-# Rubocop version 0.39.0
+# Rubocop version 0.50.0
 # Base-style configuration. This should be included in all projects.
 # Descriptions in this file are based off of the overwview of the Cop as found here:
 # http://www.rubydoc.info/github/bbatsov/rubocop/master/Rubocop/Cop
@@ -301,7 +301,7 @@ Style/OneLineConditional:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#ternary-operator'
   Enabled: false
 
-Naming/BinaryOperatorParameter:
+Naming/BinaryOperatorParameterName:
   Description: 'When defining binary operators, name the argument other.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#other-arg'
   Enabled: false
