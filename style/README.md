@@ -5,6 +5,7 @@ A guide for programming in style.
 * [Git](git)
 * [Rails](rails)
 * [Ruby](ruby)
+* [Sass](sass)
 * [Testing](testing)
 
 ## Formatting
