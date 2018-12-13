@@ -7,10 +7,10 @@ class SomeClass
     @user_factory = attributes[:user_factory]
   end
 
-  def method_with_arguments(argument_one, argument_two)
-    a_really_long_line_that_is_broken_up_over_multiple_lines_and.
-      subsequent_lines_are_indented_and.
-      each_method_lives_on_its_own_line
+  def method_with_arguments(argument_one: argument_one, argument_two: argument_two)
+    a_really_long_line_that_is_broken_up_over_multiple_lines_and
+     .subsequent_lines_are_indented_and
+     .each_method_lives_on_its_own_line
   end
 
   def method_with_required_keyword_arguments(one:, two:)
@@ -91,13 +91,13 @@ class SomeClass
 
   private
 
-  attr_reader :foo, :user_factory
-  attr_accessor :bar
-  attr_writer :baz
+    attr_reader :foo, :user_factory
+    attr_accessor :bar
+    attr_writer :baz
 
-  def complex_condition?
-    part_one? && part_two?
-  end
+    def complex_condition?
+      part_one? && part_two?
+    end
 end
 
 module A
