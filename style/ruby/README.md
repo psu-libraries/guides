@@ -36,6 +36,9 @@
 * Prefer `private` over `protected` for non-public `attr_reader`s, `attr_writer`s, and `attr_accessor`s.
 * Order class methods above instance methods.
 * Prefer method invocation over instance variables.
+* Use named arguments for methods with more than one argument
+* Break long method chains into multiple lines on the period
+
 
 [trailing comma example]: /style/ruby/sample.rb#L53
 [required kwargs]: /style/ruby/sample.rb#L16
